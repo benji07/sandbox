@@ -2,8 +2,8 @@ language: php
 php:
   - '7.2'
 
-services:
-  - mysql
+addons:
+  mariadb: '10.2'
 
 sudo: false
 

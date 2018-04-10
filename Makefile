@@ -10,4 +10,5 @@ build:
 	yarn run build
 
 test@test:
+	bin/console doctrine:fixtures:load
 	./vendor/bin/simple-phpunit
