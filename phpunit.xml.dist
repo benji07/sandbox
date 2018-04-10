@@ -16,7 +16,7 @@
         <!-- define your env variables for the test env here -->
 
         <!-- ###+ doctrine/doctrine-bundle ### -->
-        <env name="DATABASE_URL" value="mysql://root@127.0.0.1/app"/>
+        <env name="DATABASE_URL" value="mysql://root@127.0.0.1/app?serverVersion=5.6"/>
         <!-- ###- doctrine/doctrine-bundle ### -->
 
         <!-- ###+ symfony/swiftmailer-bundle ### -->
