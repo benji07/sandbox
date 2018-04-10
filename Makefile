@@ -10,5 +10,5 @@ build:
 	yarn run build
 
 test@test:
-	bin/console doctrine:fixtures:load
+	bin/console doctrine:fixtures:load --no-interaction
 	./vendor/bin/simple-phpunit
