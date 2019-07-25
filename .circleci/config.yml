@@ -51,3 +51,7 @@ jobs:
                       - node_modules
 
             - run: ./bin/phpunit
+            - run: ./vendor/bin/php-cs-fixer fix --diff --dry-run -v
+            - run: ./bin/console lint:yaml config --parse-tags
+            - run: ./bin/console lint:twig templates --env=prod
+            - run: ./bin/console security:check
